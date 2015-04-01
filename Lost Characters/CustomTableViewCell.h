@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomTableViewCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UILabel *actorLabel;
+@property (strong, nonatomic) IBOutlet UILabel *passengerLabel;
+@property (strong, nonatomic) IBOutlet UILabel *ageLabel;
+@property (strong, nonatomic) IBOutlet UILabel *genderLabel;
+@property (strong, nonatomic) IBOutlet UILabel *weightLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *characterImage;
+
 
 @end

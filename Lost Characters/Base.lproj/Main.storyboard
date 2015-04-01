@@ -70,6 +70,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lost Characters' Information" id="2RC-cv-GO4">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="V2k-ZZ-nAx">
+                            <connections>
+                                <action selector="onEditButtonPressed:" destination="vXZ-lx-hvc" id="Qi5-2v-8Ea"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1GM-PZ-8k3">
                             <connections>
                                 <segue destination="xoK-Wn-DoN" kind="show" id="QWv-0O-5dS"/>

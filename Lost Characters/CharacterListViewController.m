@@ -158,6 +158,25 @@
 
     return self.lostCharacters.count;
 }
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"SMOKE MONSTER";
+}
+
+- (IBAction)onEditButtonPressed:(UIBarButtonItem *)editButton
+{
+    if ([editButton.title isEqualToString:@"Edit"])
+    {
+        [self.tableView setEditing:YES animated:YES];
+        editButton.title = @"Done";
+    }
+    else
+    {
+        [self.tableView setEditing:NO animated:YES];
+        editButton.title = @"Edit";
+    }
+
+}
 
 //Need a prepared for segue to give access to myDB to the addCharacter View Controller.
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -166,5 +185,6 @@
     DestVC.lostCharacters = self.lostCharacters;
 
 }
+
 
 @end
