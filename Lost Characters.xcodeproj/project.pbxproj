@@ -16,7 +16,9 @@
 		F23AE3EA1ACB480C005E433B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23AE3E81ACB480C005E433B /* LaunchScreen.xib */; };
 		F23AE3F61ACB480C005E433B /* Lost_CharactersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE3F51ACB480C005E433B /* Lost_CharactersTests.m */; };
 		F23AE4001ACB4B3F005E433B /* lost.plist in Resources */ = {isa = PBXBuildFile; fileRef = F23AE3FF1ACB4B3F005E433B /* lost.plist */; };
-		F23AE4031ACB4DBE005E433B /* CharacterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE4021ACB4DBE005E433B /* CharacterDetailViewController.m */; };
+		F23AE4031ACB4DBE005E433B /* AddNewCharacterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE4021ACB4DBE005E433B /* AddNewCharacterVC.m */; };
+		F23AE4051ACBBC6E005E433B /* defaultimage.png in Resources */ = {isa = PBXBuildFile; fileRef = F23AE4041ACBBC6E005E433B /* defaultimage.png */; };
+		F23AE40B1ACBD549005E433B /* losticon.png in Resources */ = {isa = PBXBuildFile; fileRef = F23AE40A1ACBD549005E433B /* losticon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +47,10 @@
 		F23AE3F41ACB480C005E433B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23AE3F51ACB480C005E433B /* Lost_CharactersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lost_CharactersTests.m; sourceTree = "<group>"; };
 		F23AE3FF1ACB4B3F005E433B /* lost.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lost.plist; sourceTree = "<group>"; };
-		F23AE4011ACB4DBE005E433B /* CharacterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterDetailViewController.h; sourceTree = "<group>"; };
-		F23AE4021ACB4DBE005E433B /* CharacterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterDetailViewController.m; sourceTree = "<group>"; };
+		F23AE4011ACB4DBE005E433B /* AddNewCharacterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewCharacterVC.h; sourceTree = "<group>"; };
+		F23AE4021ACB4DBE005E433B /* AddNewCharacterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewCharacterVC.m; sourceTree = "<group>"; };
+		F23AE4041ACBBC6E005E433B /* defaultimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultimage.png; sourceTree = "<group>"; };
+		F23AE40A1ACBD549005E433B /* losticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = losticon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +96,12 @@
 				F23AE3DB1ACB480C005E433B /* AppDelegate.m */,
 				F23AE3E01ACB480C005E433B /* CharacterListViewController.h */,
 				F23AE3E11ACB480C005E433B /* CharacterListViewController.m */,
-				F23AE4011ACB4DBE005E433B /* CharacterDetailViewController.h */,
-				F23AE4021ACB4DBE005E433B /* CharacterDetailViewController.m */,
+				F23AE4011ACB4DBE005E433B /* AddNewCharacterVC.h */,
+				F23AE4021ACB4DBE005E433B /* AddNewCharacterVC.m */,
 				F23AE3E31ACB480C005E433B /* Main.storyboard */,
 				F23AE3E61ACB480C005E433B /* Images.xcassets */,
+				F23AE4041ACBBC6E005E433B /* defaultimage.png */,
+				F23AE40A1ACBD549005E433B /* losticon.png */,
 				F23AE3E81ACB480C005E433B /* LaunchScreen.xib */,
 				F23AE3DD1ACB480C005E433B /* Lost_Characters.xcdatamodeld */,
 				F23AE3D61ACB480C005E433B /* Supporting Files */,
@@ -210,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23AE40B1ACBD549005E433B /* losticon.png in Resources */,
+				F23AE4051ACBBC6E005E433B /* defaultimage.png in Resources */,
 				F23AE3E51ACB480C005E433B /* Main.storyboard in Resources */,
 				F23AE3EA1ACB480C005E433B /* LaunchScreen.xib in Resources */,
 				F23AE4001ACB4B3F005E433B /* lost.plist in Resources */,
@@ -231,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23AE4031ACB4DBE005E433B /* CharacterDetailViewController.m in Sources */,
+				F23AE4031ACB4DBE005E433B /* AddNewCharacterVC.m in Sources */,
 				F23AE3DC1ACB480C005E433B /* AppDelegate.m in Sources */,
 				F23AE3DF1ACB480C005E433B /* Lost_Characters.xcdatamodeld in Sources */,
 				F23AE3E21ACB480C005E433B /* CharacterListViewController.m in Sources */,

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Character" syncable="YES">
+        <attribute name="actorAge" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="actorGender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="actorHairColor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="actorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="actorPhoto" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="passengerName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Character" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Character" positionX="-63" positionY="-18" width="128" height="135"/>
     </elements>
 </model>

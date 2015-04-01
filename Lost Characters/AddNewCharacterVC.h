@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface CharacterDetailViewController : UIViewController
+@interface AddNewCharacterVC : UIViewController
+@property NSManagedObjectContext *myDB;
+@property NSArray *lostCharacters;
+
 
 @end
