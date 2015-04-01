@@ -95,15 +95,15 @@
         
 
     } else {
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Cannot Save your Character"
-                                                                       message:@"All of the fields are REQUIRED!"
-                                                                preferredStyle:UIAlertControllerStyleAlert];
-
-        UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"OK"
-                                                           style:UIAlertActionStyleDefault handler:nil];
-        [alert addAction:okButton];
-
-        [self presentViewController:alert animated:YES completion:nil];
+//        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Cannot Save your Character"
+//                                                                       message:@"All of the fields are REQUIRED!"
+//                                                                preferredStyle:UIAlertControllerStyleAlert];
+//
+//        UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"OK"
+//                                                           style:UIAlertActionStyleDefault handler:nil];
+//        [alert addAction:okButton];
+//
+//        [self presentViewController:alert animated:YES completion:nil];
 
 
     }
@@ -114,6 +114,18 @@
 
     [action showInView:self.view];
 
+}
+
+//MARK: Load Method for Core Data
+
+-(void)load
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Character"];
+
+    NSSortDescriptor *sortByName = [[NSSortDescriptor alloc] initWithKey:@"actor" ascending:YES];
+    request.sortDescriptors = @[sortByName];
+
+    self.lostCharacters = [self.myDB executeFetchRequest:request error:nil];
 }
 
 

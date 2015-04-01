@@ -15,6 +15,7 @@
 @property NSManagedObjectContext *myDB;
 @property NSDictionary *dictionaryArray;
 @property NSArray* lostCharacters;
+@property NSIndexPath* indexForItemToDelete;
 
 @end
 
@@ -69,12 +70,43 @@
     [self load];
 
 }
--(void)load{
+
+
+-(void)load
+{
     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Character"];
+
+    NSSortDescriptor *sortByName = [[NSSortDescriptor alloc] initWithKey:@"actorName" ascending:YES];
+    request.sortDescriptors = @[sortByName];
+
     self.lostCharacters = [self.myDB executeFetchRequest:request error:nil];
-    [self.tableView reloadData];
+      [self.tableView reloadData];
+}-(void) displayAlert{
+
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Delete City?" message:@"Are you should want to delete selected item?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Delete", nil];
+
+
+    [alert show];
 
 }
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+
+    //button index 0 means the user presses the cancel button.
+    if (buttonIndex == 0) {
+
+
+    }else{
+        //else this means that the user click on delete and should continue to remove the item from
+
+//[self.lostCharacters removeObserver:<#(NSObject *)#> forKeyPath:self.indexForItemToDelete context:nil];
+        [self.tableView reloadData]; // tell table to refresh now
+        
+        
+        
+        
+    }
+}
+
 
 
 #pragma mark - Table View Delegate
@@ -97,12 +129,29 @@
 
 
     cell.textLabel.text = [character valueForKey:@"actorName"];
-    cell.detailTextLabel.text = [character valueForKey:@"passengerName"];
+    cell.detailTextLabel.text =@"passenger: %@, age:%@, hair color:%@ gender:%@", [character valueForKey:@"passengerName"];
 
 
 
     return cell;
 }
+
+-(BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //remove the deleted object from your data source.
+        //If your data source is an NSMutableArray, do this
+
+       self.indexForItemToDelete = indexPath;
+
+        [self displayAlert];
+        
+    }
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
     //NSDictionary *dictionary = [self.tableArray objectAtIndex:section];

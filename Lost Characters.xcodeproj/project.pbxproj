@@ -19,6 +19,7 @@
 		F23AE4031ACB4DBE005E433B /* AddNewCharacterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE4021ACB4DBE005E433B /* AddNewCharacterVC.m */; };
 		F23AE4051ACBBC6E005E433B /* defaultimage.png in Resources */ = {isa = PBXBuildFile; fileRef = F23AE4041ACBBC6E005E433B /* defaultimage.png */; };
 		F23AE40B1ACBD549005E433B /* losticon.png in Resources */ = {isa = PBXBuildFile; fileRef = F23AE40A1ACBD549005E433B /* losticon.png */; };
+		F23AE4111ACBE449005E433B /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE4101ACBE449005E433B /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		F23AE4021ACB4DBE005E433B /* AddNewCharacterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewCharacterVC.m; sourceTree = "<group>"; };
 		F23AE4041ACBBC6E005E433B /* defaultimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultimage.png; sourceTree = "<group>"; };
 		F23AE40A1ACBD549005E433B /* losticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = losticon.png; sourceTree = "<group>"; };
+		F23AE40F1ACBE449005E433B /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		F23AE4101ACBE449005E433B /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				F23AE3DB1ACB480C005E433B /* AppDelegate.m */,
 				F23AE3E01ACB480C005E433B /* CharacterListViewController.h */,
 				F23AE3E11ACB480C005E433B /* CharacterListViewController.m */,
+				F23AE40F1ACBE449005E433B /* CustomTableViewCell.h */,
+				F23AE4101ACBE449005E433B /* CustomTableViewCell.m */,
 				F23AE4011ACB4DBE005E433B /* AddNewCharacterVC.h */,
 				F23AE4021ACB4DBE005E433B /* AddNewCharacterVC.m */,
 				F23AE3E31ACB480C005E433B /* Main.storyboard */,
@@ -241,6 +246,7 @@
 			files = (
 				F23AE4031ACB4DBE005E433B /* AddNewCharacterVC.m in Sources */,
 				F23AE3DC1ACB480C005E433B /* AppDelegate.m in Sources */,
+				F23AE4111ACBE449005E433B /* CustomTableViewCell.m in Sources */,
 				F23AE3DF1ACB480C005E433B /* Lost_Characters.xcdatamodeld in Sources */,
 				F23AE3E21ACB480C005E433B /* CharacterListViewController.m in Sources */,
 				F23AE3D91ACB480C005E433B /* main.m in Sources */,
