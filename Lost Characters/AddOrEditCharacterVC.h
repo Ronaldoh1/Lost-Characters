@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-@interface AddNewCharacterVC : UIViewController
+@interface AddOrEditCharacterVC : UIViewController
 @property NSManagedObjectContext *myDB;
-@property NSArray *lostCharacters;
+@property NSMutableArray *lostCharacters;
+@property BOOL isEditMode;
+@property NSIndexPath *indexPath;
 
 
 @end

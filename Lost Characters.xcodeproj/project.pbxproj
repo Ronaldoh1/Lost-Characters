@@ -16,7 +16,7 @@
 		F23AE3EA1ACB480C005E433B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23AE3E81ACB480C005E433B /* LaunchScreen.xib */; };
 		F23AE3F61ACB480C005E433B /* Lost_CharactersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE3F51ACB480C005E433B /* Lost_CharactersTests.m */; };
 		F23AE4001ACB4B3F005E433B /* lost.plist in Resources */ = {isa = PBXBuildFile; fileRef = F23AE3FF1ACB4B3F005E433B /* lost.plist */; };
-		F23AE4031ACB4DBE005E433B /* AddNewCharacterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE4021ACB4DBE005E433B /* AddNewCharacterVC.m */; };
+		F23AE4031ACB4DBE005E433B /* AddOrEditCharacterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE4021ACB4DBE005E433B /* AddOrEditCharacterVC.m */; };
 		F23AE4051ACBBC6E005E433B /* defaultimage.png in Resources */ = {isa = PBXBuildFile; fileRef = F23AE4041ACBBC6E005E433B /* defaultimage.png */; };
 		F23AE40B1ACBD549005E433B /* losticon.png in Resources */ = {isa = PBXBuildFile; fileRef = F23AE40A1ACBD549005E433B /* losticon.png */; };
 		F23AE4111ACBE449005E433B /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE4101ACBE449005E433B /* CustomTableViewCell.m */; };
@@ -48,8 +48,8 @@
 		F23AE3F41ACB480C005E433B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23AE3F51ACB480C005E433B /* Lost_CharactersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lost_CharactersTests.m; sourceTree = "<group>"; };
 		F23AE3FF1ACB4B3F005E433B /* lost.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lost.plist; sourceTree = "<group>"; };
-		F23AE4011ACB4DBE005E433B /* AddNewCharacterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewCharacterVC.h; sourceTree = "<group>"; };
-		F23AE4021ACB4DBE005E433B /* AddNewCharacterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewCharacterVC.m; sourceTree = "<group>"; };
+		F23AE4011ACB4DBE005E433B /* AddOrEditCharacterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOrEditCharacterVC.h; sourceTree = "<group>"; };
+		F23AE4021ACB4DBE005E433B /* AddOrEditCharacterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOrEditCharacterVC.m; sourceTree = "<group>"; };
 		F23AE4041ACBBC6E005E433B /* defaultimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultimage.png; sourceTree = "<group>"; };
 		F23AE40A1ACBD549005E433B /* losticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = losticon.png; sourceTree = "<group>"; };
 		F23AE40F1ACBE449005E433B /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
@@ -101,8 +101,8 @@
 				F23AE3E11ACB480C005E433B /* CharacterListViewController.m */,
 				F23AE40F1ACBE449005E433B /* CustomTableViewCell.h */,
 				F23AE4101ACBE449005E433B /* CustomTableViewCell.m */,
-				F23AE4011ACB4DBE005E433B /* AddNewCharacterVC.h */,
-				F23AE4021ACB4DBE005E433B /* AddNewCharacterVC.m */,
+				F23AE4011ACB4DBE005E433B /* AddOrEditCharacterVC.h */,
+				F23AE4021ACB4DBE005E433B /* AddOrEditCharacterVC.m */,
 				F23AE3E31ACB480C005E433B /* Main.storyboard */,
 				F23AE3E61ACB480C005E433B /* Images.xcassets */,
 				F23AE4041ACBBC6E005E433B /* defaultimage.png */,
@@ -244,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23AE4031ACB4DBE005E433B /* AddNewCharacterVC.m in Sources */,
+				F23AE4031ACB4DBE005E433B /* AddOrEditCharacterVC.m in Sources */,
 				F23AE3DC1ACB480C005E433B /* AppDelegate.m in Sources */,
 				F23AE4111ACBE449005E433B /* CustomTableViewCell.m in Sources */,
 				F23AE3DF1ACB480C005E433B /* Lost_Characters.xcdatamodeld in Sources */,
@@ -440,6 +440,7 @@
 				F23AE3FB1ACB480C005E433B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F23AE3FC1ACB480C005E433B /* Build configuration list for PBXNativeTarget "Lost CharactersTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +449,7 @@
 				F23AE3FE1ACB480C005E433B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

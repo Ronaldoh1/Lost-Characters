@@ -17,42 +17,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5ta-vg-bQ5">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="157" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5ta-vg-bQ5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="97i-9W-HUY" rowHeight="113" style="IBUITableViewCellStyleDefault" id="hQb-kE-6Fj" customClass="CustomTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="157" id="hQb-kE-6Fj" customClass="CustomTableViewCell">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hQb-kE-6Fj" id="v1s-iv-R2y">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="97i-9W-HUY">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Passenger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxM-8p-fYG">
+                                                    <rect key="frame" x="212" y="68" width="81" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Passanger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxM-8p-fYG">
-                                                    <rect key="frame" x="166" y="70" width="81" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdY-aA-fWF">
+                                                    <rect key="frame" x="212" y="28" width="57" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCF-gh-DPy">
-                                                    <rect key="frame" x="191" y="49" width="31" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hair Color" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyP-HG-8yk">
+                                                    <rect key="frame" x="214" y="88" width="78" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdY-aA-fWF">
-                                                    <rect key="frame" x="178" y="25" width="57" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTc-tp-euH">
+                                                    <rect key="frame" x="212" y="8" width="82" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="29" translatesAutoresizingMaskIntoConstraints="NO" id="QCF-gh-DPy">
+                                                    <rect key="frame" x="212" y="50" width="31" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                        <connections>
+                                            <outlet property="HairColorLabel" destination="FyP-HG-8yk" id="wsh-VE-VAG"/>
+                                            <outlet property="actorName" destination="PTc-tp-euH" id="yOV-5H-vvI"/>
+                                            <outlet property="ageLabel" destination="QCF-gh-DPy" id="Pzd-Yw-e6l"/>
+                                            <outlet property="genderLabel" destination="OdY-aA-fWF" id="pGp-Pm-vuM"/>
+                                            <outlet property="passengerNameLabel" destination="JxM-8p-fYG" id="59H-Mb-whZ"/>
+                                            <segue destination="xoK-Wn-DoN" kind="show" identifier="editCharacter" id="jQD-6z-eH6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -70,14 +84,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lost Characters' Information" id="2RC-cv-GO4">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="V2k-ZZ-nAx">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="V2k-ZZ-nAx">
                             <connections>
                                 <action selector="onEditButtonPressed:" destination="vXZ-lx-hvc" id="Qi5-2v-8Ea"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1GM-PZ-8k3">
                             <connections>
-                                <segue destination="xoK-Wn-DoN" kind="show" id="QWv-0O-5dS"/>
+                                <segue destination="xoK-Wn-DoN" kind="show" identifier="addNewCharacter" id="QWv-0O-5dS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -90,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="1152" y="429"/>
         </scene>
-        <!--Add New CharacterVC-->
+        <!--Add Or Edit CharacterVC-->
         <scene sceneID="ObK-pc-JcU">
             <objects>
-                <viewController id="xoK-Wn-DoN" customClass="AddNewCharacterVC" sceneMemberID="viewController">
+                <viewController id="xoK-Wn-DoN" customClass="AddOrEditCharacterVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hJm-w6-F6q"/>
                         <viewControllerLayoutGuide type="bottom" id="eNS-vb-UhS"/>
@@ -108,7 +122,7 @@
                                     <constraint firstAttribute="height" constant="21" id="Imf-r4-2tB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Actor Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaP-6l-4Rg">
@@ -244,6 +258,7 @@
                         <outlet property="actorImage" destination="bwI-KS-A7D" id="vtu-Ta-FPM"/>
                         <outlet property="actorNameTextField" destination="RaP-6l-4Rg" id="xXa-6G-Hv9"/>
                         <outlet property="ageTexField" destination="XXW-sc-LYZ" id="B4v-mJ-bvz"/>
+                        <outlet property="editOrAddbutton" destination="3Er-eF-hnR" id="0ut-8k-LLC"/>
                         <outlet property="genderTextField" destination="Uta-j7-PQ8" id="aZu-4W-VQp"/>
                         <outlet property="passengerNameTextField" destination="9Ec-M5-d48" id="3UQ-dH-8fG"/>
                     </connections>
@@ -279,4 +294,7 @@
     <resources>
         <image name="defaultimage.png" width="1200" height="1200"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jQD-6z-eH6"/>
+    </inferredMetricsTieBreakers>
 </document>
